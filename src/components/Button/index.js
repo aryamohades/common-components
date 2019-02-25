@@ -23,29 +23,31 @@ const IconWrapper = styled(FontAwesomeIcon)`
 `;
 
 export const Wrapper = styled.button`
-  ${props => (
-    props.size === 'small' && css`
+  ${props =>
+    props.size === 'small' &&
+    css`
       font-size: ${buttonFontSizeSmall};
       padding: ${buttonPaddingSmall};
-    `
-    )}
+    `}
 
-  ${props => (
-    props.size === 'medium' && css`
+  ${props =>
+    props.size === 'medium' &&
+    css`
       font-size: ${buttonFontSizeMedium};
       padding: ${buttonPaddingMedium};
-    `
-    )}
+    `}
 
-  ${props => (
-    props.size === 'large' && css`
+  ${props =>
+    props.size === 'large' &&
+    css`
       font-size: ${buttonFontSizeLarge};
       padding: ${buttonPaddingLarge};
-    `
-    )}
+    `}
 
-  ${props => (
-    !props.disabled && BUTTON_COLOR_MAP[props.theme] && css`
+  ${props =>
+    !props.disabled &&
+    BUTTON_COLOR_MAP[props.theme] &&
+    css`
       background: ${BUTTON_COLOR_MAP[props.theme].buttonColor};
       color: ${BUTTON_COLOR_MAP[props.theme].buttonTextColor};
       box-shadow: 0 2px ${BUTTON_COLOR_MAP[props.theme].buttonShadow};
@@ -61,15 +63,12 @@ export const Wrapper = styled.button`
         color: ${BUTTON_COLOR_MAP[props.theme].buttonTextColorActive};
         box-shadow: 0 2px ${BUTTON_COLOR_MAP[props.theme].buttonShadowActive};
       }
-    `
-    )}
+    `}
 `;
 
 const Button = ({ handleClick, disabled, children, icon, ...rest }) => (
   <Wrapper {...rest} onClick={handleClick} disabled={disabled}>
-    {icon && (
-      <IconWrapper icon={icon} />
-    )}
+    {icon && <IconWrapper icon={icon} />}
     {children}
   </Wrapper>
 );
@@ -78,7 +77,8 @@ Button.propTypes = {
   handleClick: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
   size: PropTypes.oneOf(['small', 'medium', 'large']).isRequired,
-  theme: PropTypes.oneOf(['primary', 'light', 'dark', 'green', 'blue', 'red']).isRequired,
+  theme: PropTypes.oneOf(['primary', 'light', 'dark', 'green', 'blue', 'red'])
+    .isRequired,
   icon: PropTypes.string,
 };
 

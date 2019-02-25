@@ -36,91 +36,141 @@ const HomePage = () => (
       <Col>
         <HeaderLabel>Button</HeaderLabel>
         <Section>
-          <Button size={'small'} handleClick={() => {}}>Small</Button>
+          <Button size="small" handleClick={() => {}}>
+            Small
+          </Button>
         </Section>
         <Section>
-          <Button size={'medium'} handleClick={() => {}}>Medium</Button>
+          <Button size="medium" handleClick={() => {}}>
+            Medium
+          </Button>
         </Section>
         <Section>
-          <Button size={'large'} handleClick={() => {}}>Large</Button>
+          <Button size="large" handleClick={() => {}}>
+            Large
+          </Button>
         </Section>
         <Section>
-          <Button icon={'coffee'} handleClick={() => {}}>Icon</Button>
+          <Button icon="coffee" handleClick={() => {}}>
+            Icon
+          </Button>
         </Section>
         <Section>
-          <Button disabled handleClick={() => {}}>Disabled</Button>
+          <Button disabled handleClick={() => {}}>
+            Disabled
+          </Button>
         </Section>
       </Col>
       <Col>
         <HeaderLabel>Primary Button</HeaderLabel>
         <Section>
-          <Button theme={'primary'} size={'small'} handleClick={() => {}}>Small</Button>
+          <Button theme="primary" size="small" handleClick={() => {}}>
+            Small
+          </Button>
         </Section>
         <Section>
-          <Button theme={'primary'} size={'medium'} handleClick={() => {}}>Medium</Button>
+          <Button theme="primary" size="medium" handleClick={() => {}}>
+            Medium
+          </Button>
         </Section>
         <Section>
-          <Button theme={'primary'} size={'large'} handleClick={() => {}}>Large</Button>
+          <Button theme="primary" size="large" handleClick={() => {}}>
+            Large
+          </Button>
         </Section>
         <Section>
-          <Button theme={'primary'} icon={'coffee'} handleClick={() => {}}>Icon</Button>
+          <Button theme="primary" icon="coffee" handleClick={() => {}}>
+            Icon
+          </Button>
         </Section>
         <Section>
-          <Button theme={'primary'} disabled handleClick={() => {}}>Disabled</Button>
+          <Button theme="primary" disabled handleClick={() => {}}>
+            Disabled
+          </Button>
         </Section>
       </Col>
       <Col>
         <HeaderLabel>Dark Button</HeaderLabel>
         <Section>
-          <Button theme={'dark'} size={'small'} handleClick={() => {}}>Small</Button>
+          <Button theme="dark" size="small" handleClick={() => {}}>
+            Small
+          </Button>
         </Section>
         <Section>
-          <Button theme={'dark'} size={'medium'} handleClick={() => {}}>Medium</Button>
+          <Button theme="dark" size="medium" handleClick={() => {}}>
+            Medium
+          </Button>
         </Section>
         <Section>
-          <Button theme={'dark'} size={'large'} handleClick={() => {}}>Large</Button>
+          <Button theme="dark" size="large" handleClick={() => {}}>
+            Large
+          </Button>
         </Section>
         <Section>
-          <Button theme={'dark'} icon={'coffee'} handleClick={() => {}}>Icon</Button>
+          <Button theme="dark" icon="coffee" handleClick={() => {}}>
+            Icon
+          </Button>
         </Section>
         <Section>
-          <Button theme={'dark'} disabled handleClick={() => {}}>Disabled</Button>
+          <Button theme="dark" disabled handleClick={() => {}}>
+            Disabled
+          </Button>
         </Section>
       </Col>
       <Col>
         <HeaderLabel>Green Button</HeaderLabel>
         <Section>
-          <Button theme={'green'} size={'small'} handleClick={() => {}}>Small</Button>
+          <Button theme="green" size="small" handleClick={() => {}}>
+            Small
+          </Button>
         </Section>
         <Section>
-          <Button theme={'green'} size={'medium'} handleClick={() => {}}>Medium</Button>
+          <Button theme="green" size="medium" handleClick={() => {}}>
+            Medium
+          </Button>
         </Section>
         <Section>
-          <Button theme={'green'} size={'large'} handleClick={() => {}}>Large</Button>
+          <Button theme="green" size="large" handleClick={() => {}}>
+            Large
+          </Button>
         </Section>
         <Section>
-          <Button theme={'green'} icon={'coffee'} handleClick={() => {}}>Icon</Button>
+          <Button theme="green" icon="coffee" handleClick={() => {}}>
+            Icon
+          </Button>
         </Section>
         <Section>
-          <Button theme={'green'} disabled handleClick={() => {}}>Disabled</Button>
+          <Button theme="green" disabled handleClick={() => {}}>
+            Disabled
+          </Button>
         </Section>
       </Col>
       <Col>
         <HeaderLabel>Red Button</HeaderLabel>
         <Section>
-          <Button theme={'red'} size={'small'} handleClick={() => {}}>Small</Button>
+          <Button theme="red" size="small" handleClick={() => {}}>
+            Small
+          </Button>
         </Section>
         <Section>
-          <Button theme={'red'} size={'medium'} handleClick={() => {}}>Medium</Button>
+          <Button theme="red" size="medium" handleClick={() => {}}>
+            Medium
+          </Button>
         </Section>
         <Section>
-          <Button theme={'red'} size={'large'} handleClick={() => {}}>Large</Button>
+          <Button theme="red" size="large" handleClick={() => {}}>
+            Large
+          </Button>
         </Section>
         <Section>
-          <Button theme={'red'} icon={'coffee'} handleClick={() => {}}>Icon</Button>
+          <Button theme="red" icon="coffee" handleClick={() => {}}>
+            Icon
+          </Button>
         </Section>
         <Section>
-          <Button theme={'red'} disabled handleClick={() => {}}>Disabled</Button>
+          <Button theme="red" disabled handleClick={() => {}}>
+            Disabled
+          </Button>
         </Section>
       </Col>
     </Row>
