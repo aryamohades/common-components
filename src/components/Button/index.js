@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   buttonFontSizeSmall,
   buttonPaddingSmall,
@@ -16,6 +17,10 @@ import {
   primaryButtonTextColorActive,
   BUTTON_COLOR_MAP,
 } from 'theme';
+
+const IconWrapper = styled(FontAwesomeIcon)`
+  margin-right: 8px;
+`;
 
 export const Wrapper = styled.button`
   ${props => (
@@ -60,8 +65,11 @@ export const Wrapper = styled.button`
     )}
 `;
 
-const Button = ({ handleClick, disabled, children, ...rest }) => (
+const Button = ({ handleClick, disabled, children, icon, ...rest }) => (
   <Wrapper {...rest} onClick={handleClick} disabled={disabled}>
+    {icon && (
+      <IconWrapper icon={icon} />
+    )}
     {children}
   </Wrapper>
 );
@@ -71,6 +79,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   size: PropTypes.oneOf(['small', 'medium', 'large']).isRequired,
   theme: PropTypes.oneOf(['primary', 'light', 'dark', 'green', 'blue', 'red']).isRequired,
+  icon: PropTypes.string,
 };
 
 Button.defaultProps = {

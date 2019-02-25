@@ -45,6 +45,9 @@ const HomePage = () => (
           <Button size={'large'} handleClick={() => {}}>Large</Button>
         </Section>
         <Section>
+          <Button icon={'coffee'} handleClick={() => {}}>Icon</Button>
+        </Section>
+        <Section>
           <Button disabled handleClick={() => {}}>Disabled</Button>
         </Section>
       </Col>
@@ -58,6 +61,9 @@ const HomePage = () => (
         </Section>
         <Section>
           <Button theme={'primary'} size={'large'} handleClick={() => {}}>Large</Button>
+        </Section>
+        <Section>
+          <Button theme={'primary'} icon={'coffee'} handleClick={() => {}}>Icon</Button>
         </Section>
         <Section>
           <Button theme={'primary'} disabled handleClick={() => {}}>Disabled</Button>
@@ -75,6 +81,9 @@ const HomePage = () => (
           <Button theme={'dark'} size={'large'} handleClick={() => {}}>Large</Button>
         </Section>
         <Section>
+          <Button theme={'dark'} icon={'coffee'} handleClick={() => {}}>Icon</Button>
+        </Section>
+        <Section>
           <Button theme={'dark'} disabled handleClick={() => {}}>Disabled</Button>
         </Section>
       </Col>
@@ -90,6 +99,9 @@ const HomePage = () => (
           <Button theme={'green'} size={'large'} handleClick={() => {}}>Large</Button>
         </Section>
         <Section>
+          <Button theme={'green'} icon={'coffee'} handleClick={() => {}}>Icon</Button>
+        </Section>
+        <Section>
           <Button theme={'green'} disabled handleClick={() => {}}>Disabled</Button>
         </Section>
       </Col>
@@ -103,6 +115,9 @@ const HomePage = () => (
         </Section>
         <Section>
           <Button theme={'red'} size={'large'} handleClick={() => {}}>Large</Button>
+        </Section>
+        <Section>
+          <Button theme={'red'} icon={'coffee'} handleClick={() => {}}>Icon</Button>
         </Section>
         <Section>
           <Button theme={'red'} disabled handleClick={() => {}}>Disabled</Button>
