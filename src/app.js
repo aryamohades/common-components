@@ -21,10 +21,16 @@ import App from 'containers/App';
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
 import 'file-loader?name=.htaccess!./.htaccess'; // eslint-disable-line import/extensions
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faCheckSquare,
+  faCoffee,
+  faChevronRight,
+  faBacon,
+  faFilter,
+} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faCheckSquare, faCoffee)
+library.add(faCheckSquare, faCoffee, faChevronRight, faBacon, faFilter);
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
@@ -38,10 +44,7 @@ library.add(faCheckSquare, faCoffee)
 const MOUNT_NODE = document.getElementById('app');
 
 const render = () => {
-  ReactDOM.render(
-    <App />,
-    MOUNT_NODE,
-  );
+  ReactDOM.render(<App />, MOUNT_NODE);
 };
 
 if (module.hot) {

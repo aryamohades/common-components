@@ -8,6 +8,8 @@ import {
   buttonBorder,
   buttonColorDisabled,
   buttonTextColorDisabled,
+  linkColor,
+  linkColorHover,
 } from './theme';
 
 const GlobalStyle = createGlobalStyle`
@@ -26,6 +28,16 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${bodyBackgroundColor};
     min-height: 100%;
     min-width: 100%;
+  }
+
+  a {
+    cursor: pointer;
+    color: ${linkColor};
+    text-decoration: underline;
+
+    &:hover {
+      color: ${linkColorHover};
+    }
   }
 
   button {

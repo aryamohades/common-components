@@ -13,8 +13,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
 
@@ -23,7 +21,7 @@ const AppWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   min-height: 100%;
-  padding: 0 16px;
+  padding: 60px 16px;
   flex-direction: column;
 `;
 
@@ -35,14 +33,12 @@ const App = () => (
     >
       <meta name="description" content="A React.js Boilerplate application" />
     </Helmet>
-    <Header />
     <Router>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
     </Router>
-    <Footer />
     <GlobalStyle />
   </AppWrapper>
 );

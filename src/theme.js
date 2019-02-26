@@ -3,15 +3,22 @@ export const font = '"Helvetica Neue", Helvetica, Arial, sans-serif';
 export const bodyBackgroundColor = '#fafafa';
 export const textColor = '#333';
 
+// Font sizes
+export const FONT_SIZE_MAP = {
+  xs: '12px',
+  sm: '14px',
+  md: '16px',
+  lg: '18px',
+  xl: '22px',
+};
+
+// Link style
+export const linkColor = '#333';
+export const linkColorHover = '#222';
+
 // Base button style
 export const buttonFont = '"Helvetica Neue", Helvetica, Arial, sans-serif';
 export const buttonBorderRadius = '3px';
-export const buttonFontSizeSmall = '14px';
-export const buttonFontSizeMedium = '16px';
-export const buttonFontSizeLarge = '20px';
-export const buttonPaddingSmall = '10px 16px';
-export const buttonPaddingMedium = '12px 20px';
-export const buttonPaddingLarge = '14px 24px';
 export const buttonBorder = '1px solid transparent';
 
 // Base button colors
@@ -24,6 +31,23 @@ export const buttonShadowDisabled = '0 2px #d6dadc';
 export const buttonColorDisabled = '#e3e3e3';
 export const buttonTextColorDisabled = '#a5acb0';
 
+// Button sizes
+export const BUTTON_SIZE_MAP = {
+  sm: {
+    fontSize: '14px',
+    padding: '10px 16px',
+  },
+  md: {
+    fontSize: '16px',
+    padding: '12px 20px',
+  },
+  lg: {
+    fontSize: '20px',
+    padding: '14px 28px',
+  },
+};
+
+// Button colors
 export const BUTTON_COLOR_MAP = {
   primary: {
     buttonColor: '#0079be',
@@ -89,6 +113,6 @@ export const BUTTON_COLOR_MAP = {
     buttonTextColorActive: '#fff',
     buttonShadow: '#d6dadc',
     buttonShadowHover: '#838c91',
-    buttonShadowActive: '#838c91'
-  }
+    buttonShadowActive: '#838c91',
+  },
 };
